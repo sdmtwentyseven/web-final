@@ -1,0 +1,280 @@
+<!-- Made by Skakovskiy Dmitriy -->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Effects of Social Media</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">    
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==">
+    <script src="https://kit.fontawesome.com/501c408ad7.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="image/Favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+
+</head>
+
+<body style="padding-bottom: 0; padding-top: 0;">
+    <header class="hidden">
+		<div class="container ">	
+			<div class="row">
+				<div class="col-12">
+
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<div class="container-fluid ">
+						  <a class="navbar-brand" href="Main.html">
+							<img src="image/Logo.png" alt="Logo" width="100px" class="sc">
+						  </a>
+						  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+							<span class="navbar-toggler-icon"></span>
+						  </button>
+						  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul id="navbaritems" class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap: 40px;">
+							  <li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">Главная</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="Positive.html">Положительное влияние</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="Negative.html">Отрицательное влияние</a>
+                </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="About.html">О нас</a>
+							  </li>
+							  <a class="nav-link active" href="Contact.html">Связаться с нами</a>
+							  </li>
+							</ul>
+						  </div>
+						</div>
+					</nav>
+
+        </div>
+      </div>
+		</div>                
+	</header>
+
+  <br><br> 
+
+  <main>
+    <div class="container my-5">
+        <h1>Викторина\Опрос</h1> <br> <br>
+    
+        <form>
+          <div class="mb-3">
+            <label for="question1" class="form-label">1. Как часто вы пользуетесь социальными сетми в течение дня?</label>
+            <select class="form-select" id="question1">
+                <option selected disabled value="">Выберите...</option>
+                <option value="yes">Постоянно</option>
+                <option value="yes">Часто</option>
+                <option value="no">Иногда</option>
+                <option value="no">Редко</option>
+                <option value="no">Никогда</option>
+              </select>
+          </div>
+    
+          <div class="mb-3">
+            <label for="question2" class="form-label">2. Считаете ли вы, что социальные сети положительно влияют на вашу жизнь?</label>
+            <select class="form-select" id="question2">
+                <option selected disabled value="">Выберите...</option>
+                <option value="yes">Да</option>
+                <option value="no">Нет</option>
+            </select>
+          </div>
+    
+          <div class="mb-3">
+                <label for="question3" class="form-label">3. Какие положительные или негативные изменения в вашей жизни произошли из-за социальных сетей?</label>
+                <textarea class="form-control" id="question3" rows="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="question2" class="form-label">4. Считаете ли вы, что социальные сети могут оказывать отрицательное воздействие на психическое здоровье?</label>
+            <select class="form-select" id="question2">
+                <option selected disabled value="">Выберите...</option>
+                <option value="yes">Да</option>
+                <option value="no">Нет</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="question1" class="form-label">5. Есть ли у вас ограничения по времени, которое вы проводите в социальных сетях?</label>
+            <select class="form-select" id="question1">
+                <option selected disabled value="">Выберите...</option>
+                <option value="yes">Нет</option>
+                <option value="yes">до 1 часа в день</option>
+                <option value="no">от 1 до 3 часов в день</option>
+                <option value="no">от 3 до 5 часов в день</option>
+                <option value="no">больше 5 часов в день</option>
+              </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="question3" class="form-label">6. Какие изменения вы бы внесли в использование социальных сетей, чтобы сделать их воздействие более полезным</label>
+            <textarea class="form-control" id="question3" rows="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="question2" class="form-label">7. Понравился ли вам сайт?</label>
+            <select class="form-select" id="question2">
+                <option selected disabled value="">Выберите...</option>
+                <option value="yes">Да, классный сайт</option>
+                <option value="no">Обычный сайт, ничего необыкновенного</option>
+                <option value="no">Нет, ужасный сайт</option>
+            </select>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+      </div>
+      <br> <br> <br>
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-4">
+                    <label for="first-name" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="first-name" value="Дмитрий" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Скаковский" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Эл. почта</label>
+                    <div class="input-group">
+                      <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Пожалуйста введиде коректный адрес эл. почты!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Коментарии </label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                      Пожалуйста введите корректный город!
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom05" class="form-label">Город</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Я соглашаюсь с условиями обработки данных
+                      </label>
+                      <div class="invalid-feedback">
+                        Вы должны согласиться перед тем как отпрвить!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Связаться с нами</button>
+                  </div>
+                </form>
+                <br><br>
+                <div class="alert alert-secondary" role="alert">
+                  <h4 class="alert-heading">Пожалуйста!</h4>
+                  <p>Перед тем, как отправить форму убедитесь в том, что вы ввели все данные верно!</p>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!----Fixed play music button----->
+
+  <div class="button-container">
+    <div class="btn btn-primary" id="main-button"><i class="fa-solid fa-hand-pointer fa-shake fa-2x"></i></div>
+    <div class="button-options">
+      <div class="btn" id="play-button"><i class="fa-solid fa-play"></i></div>
+      <audio id="audio-player" src="image/Озвучка.mp3"></audio>
+      <div class="btn" id="stop-button"><i class="fa-solid fa-pause"></i></div>
+      <div class="btn" id="repeat-button"><i class="fa-solid fa-repeat"></i></div>
+    </div>
+  </div>
+
+</main>
+
+<br><br><br><br>
+
+<div class="foot">
+    <footer class="footer "> 
+        <div class="waves">
+    
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="Main.html">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="Contact.html">Опрос</a></li>
+            <li class="menu__item"><a class="menu__link" href="Abo йut.html">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="Requirements for the final project.pdf">Условия использования</a></li>
+      
+      
+          </ul>
+          <p>&copy;2024 Astana IT | Effects of Social Media</p>
+              <br>Contact us | sdmtwentyseven@gmail.com
+        </p>
+      </footer>
+    </div>
+  
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="app2.js"></script>
+
+</body>
+</html>
+
+
+  
